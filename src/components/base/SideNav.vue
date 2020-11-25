@@ -86,5 +86,6 @@ export default {
   margin-top: auto;
   text-align: center;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 </style>

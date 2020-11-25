@@ -1,6 +1,6 @@
 <template>
   <div class="condition">
-    <div class="condition__select" @click="checkIndex">
+    <div class="condition__select">
       <span>Условие</span>
       <select v-model="selected">
         <option
