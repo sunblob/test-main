@@ -1,7 +1,10 @@
 <template>
   <div class="content">
-    <div v-for="(condition, index) in conditions" :key="condition.value">
-      <responders-condition :index="index"></responders-condition>
+    <div v-for="(condition, index) in conditions" :key="condition.id">
+      <responders-condition
+        :index="index"
+        :id="condition.id"
+      ></responders-condition>
     </div>
     <responders-footer
       v-on:open-add-condition="openAddCondition"

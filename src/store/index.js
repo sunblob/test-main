@@ -9,10 +9,10 @@ export default new Vuex.Store({
 	},
 	mutations: {
 		addCondition(state) {
-			state.conditions.push({ value: 'A' });
+			state.conditions.push({ value: 'A', id: Date.now() });
 		},
 		deleteCondition(state, payload) {
-			state.conditions.splice(payload, 1);
+			state.conditions = state.conditions.filter((item) => item.id !== payload);
 		},
 	},
 	actions: {

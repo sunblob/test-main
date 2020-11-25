@@ -1,6 +1,6 @@
 <template>
   <div class="condition">
-    <div class="condition__select">
+    <div class="condition__select" @click="checkIndex">
       <span>Условие</span>
       <select v-model="selected">
         <option
@@ -24,7 +24,7 @@
 import { mapGetters } from "vuex";
 
 export default {
-  props: ["index"],
+  props: ["index", "id"],
   data: () => ({
     selected: "А",
     options: [
@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     deleteCondition() {
-      this.$store.dispatch("deleteCondition", this.index);
+      this.$store.dispatch("deleteCondition", this.id);
     },
   },
 };
