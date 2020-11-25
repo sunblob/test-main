@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="condition__card-add">
-      <div class="card-add__text">
+      <div class="card-add__text" @click="openAddCondition">
         <font-awesome-icon :icon="['fas', 'plus']"></font-awesome-icon>
         <span>Нажмите, чтобы добавить новое условие выборки.</span>
         <span> Все условия всязываеются между собой логическим "И"</span>
@@ -18,14 +18,19 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    openAddCondition() {
+      this.$emit("open-add-condition");
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .condition__card-add {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 1px 2px #ccc;
   border-radius: 5px;
 
   .card-add__text {

@@ -8,16 +8,16 @@ export default new Vuex.Store({
 		conditions: [],
 	},
 	mutations: {
-		addCondition(state, payload) {
-			state.conditions.push(payload);
+		addCondition(state) {
+			state.conditions.push({ value: 'A' });
 		},
 		deleteCondition(state, payload) {
 			state.conditions.splice(payload, 1);
 		},
 	},
 	actions: {
-		addCondition(context, condition) {
-			context.commit('addCondition', condition);
+		addCondition(context) {
+			context.commit('addCondition');
 		},
 		deleteCondition(context, index) {
 			context.commit('deleteCondition', index);

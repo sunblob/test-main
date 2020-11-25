@@ -1,5 +1,5 @@
 <template>
-  <div>Call</div>
+  <div>Call canter</div>
 </template>
 
 <script>

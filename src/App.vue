@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import BasePage from "./components/BasePage.vue";
-import SideNav from "./components/SideNav.vue";
+import BasePage from "./components/base/BasePage.vue";
+import SideNav from "./components/base/SideNav.vue";
 
 export default {
   components: {

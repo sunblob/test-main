@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import image from "./../assets/logo.png";
+import image from "./../../assets/logo.png";
 export default {
   data: () => ({
     image: image,
@@ -60,7 +60,7 @@ export default {
 
     &:focus {
       outline: none;
-      box-shadow: 0 0 0 2px #4c39dd;
+      box-shadow: 0 0 0 2px rgb(13, 184, 141);
     }
   }
 }

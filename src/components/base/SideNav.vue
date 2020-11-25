@@ -72,8 +72,8 @@ export default {
   border: 3px solid transparent;
 
   &.router-link-exact-active {
-    color: #a5fd6a;
-    border: 3px solid #a5fd6a;
+    color: rgb(13, 184, 141);
+    border: 3px solid rgb(13, 184, 141);
   }
 
   &:hover {

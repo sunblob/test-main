@@ -1,5 +1,5 @@
 <template>
-  <div>Black</div>
+  <div>Black list</div>
 </template>
 
 <script>

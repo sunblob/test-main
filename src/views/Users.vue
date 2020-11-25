@@ -37,13 +37,14 @@ export default {
 .users {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+
   .user__card {
     background-color: #ccc;
     border-radius: 5px;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 
     .user__name {
       font-weight: bold;

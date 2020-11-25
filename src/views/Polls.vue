@@ -16,11 +16,11 @@
 </template>
 
 <script>
-import Responders from "@/components/Responders";
-import Questions from "@/components/Questions";
-import Logic from "@/components/Logic";
-import Conditions from "@/components/Conditions";
-import Params from "@/components/Params";
+import Responders from "@/components/responders/Responders";
+import Questions from "@/components/questions/Questions";
+import Logic from "@/components/logic/Logic";
+import Conditions from "@/components/conditions/Conditions";
+import Params from "@/components/params/Params";
 
 export default {
   components: {
