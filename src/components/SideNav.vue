@@ -39,12 +39,13 @@ export default {
 
 <style lang="scss" scoped>
 .side {
-  box-shadow: 2px 0 1px 0px #ccc;
+  box-shadow: 2px 1px 1px 0px #ccc;
   display: flex;
   flex-direction: column;
   padding: 5px;
   width: 150px;
   background-color: rgb(248, 248, 248);
+  height: 900px;
 
   .nav__logo {
     width: 50px;

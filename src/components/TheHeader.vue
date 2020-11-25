@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <input type="text" placeholder="Поиск по системе" />
+    <input type="text" placeholder="Поиск по системе" class="header__search" />
     <div class="header__user">
       <img :src="image" alt="" />
       <div class="header__user-info">
@@ -32,7 +32,7 @@ export default {
     align-items: center;
     img {
       display: block;
-      width: 40px;
+      width: 50px;
       max-height: 100%;
       border-radius: 50%;
     }
@@ -43,11 +43,24 @@ export default {
       .user__name {
         font-weight: bold;
         color: #000;
+        font-size: 14px;
       }
 
       .user__role {
-        font-size: 12px;
+        font-size: 11px;
       }
+    }
+  }
+
+  .header__search {
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    line-height: 1.5;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px #4c39dd;
     }
   }
 }

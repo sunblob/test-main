@@ -1,18 +1,18 @@
 <template>
   <div id="app">
     <side-nav></side-nav>
-    <page></page>
+    <base-page></base-page>
   </div>
 </template>
 
 <script>
-import Page from "./components/Page.vue";
+import BasePage from "./components/BasePage.vue";
 import SideNav from "./components/SideNav.vue";
 
 export default {
   components: {
     SideNav,
-    Page,
+    BasePage,
   },
 };
 </script>
@@ -39,6 +39,22 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+button,
+input {
+  overflow: visible;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
 }
 
 ul {
